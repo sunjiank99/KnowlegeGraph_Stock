@@ -1,12 +1,12 @@
-package org.sunjian.graphdatabaseservice.po;
+package org.sunjian.graphdatabaseservice.po.node;
 import org.neo4j.ogm.annotation.*;
+import org.sunjian.graphdatabaseservice.po.BaseNode;
 
 import java.io.Serializable;
 
 
 @NodeEntity(label = "股票")
-public class StockNode implements Serializable {
-
+public class StockNode extends BaseNode {
     @GeneratedValue
     @Id
     private Long nodeId;
