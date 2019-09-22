@@ -33,8 +33,9 @@ public class StockRepositoryTest {
 //         Optional<BelongToRelation> belongToRelation=  belongToRepository.findById(Long.valueOf(4375));
 
 //         Iterable<BelongToRelation> belongToRelations =  belongToRepository.findAll();
-         List<Map<String,Object>> list=belongToRepository.searchAllNode();
-         System.out.println(list);
+//         List<Map<String,Object>> list=belongToRepository.searchAllNode();
+         List<StockNode> stockNodeList=stockRepository.getStockNodeByAShareShortName("棕榈股份");
+         System.out.println(stockNodeList);
      }
 
 
