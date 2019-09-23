@@ -7,7 +7,7 @@ import org.neo4j.ogm.annotation.Property;
 import org.sunjian.graphdatabaseservice.po.BaseNode;
 
 
-@NodeEntity(label = "所属证监会行业")
+@NodeEntity(label = "区域")
 public class ZoneNode  extends BaseNode {
 
     @GeneratedValue

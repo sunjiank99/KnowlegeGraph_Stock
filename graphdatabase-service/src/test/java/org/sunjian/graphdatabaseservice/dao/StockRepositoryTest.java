@@ -24,17 +24,15 @@ public class StockRepositoryTest {
      @Autowired
       BelongToRepository belongToRepository;
 
-     @Test
+//     @Test
      public void Test(){
-//         List<StockNode> stockNodeList=stockRepository.getStockNodeList();
-//         for(StockNode item:stockNodeList){
-//             System.out.println(item.toString());
-//         }
-//         Optional<BelongToRelation> belongToRelation=  belongToRepository.findById(Long.valueOf(4375));
-
-//         Iterable<BelongToRelation> belongToRelations =  belongToRepository.findAll();
-//         List<Map<String,Object>> list=belongToRepository.searchAllNode();
          List<StockNode> stockNodeList=stockRepository.getStockNodeByAShareShortName("棕榈股份");
+         System.out.println(stockNodeList);
+     }
+
+     @Test
+    public void StockByQueryNameTest(){
+         List<StockNode> stockNodeList=stockRepository.getStockNodeByQueryProperty("董事长","吴桂昌");
          System.out.println(stockNodeList);
      }
 

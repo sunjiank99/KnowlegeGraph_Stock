@@ -20,9 +20,11 @@ public interface StockRepository extends Neo4jRepository<StockNode,Long> {
     @Query("match (n:股票) where n.A股简称={aShareShortName} return n")
     List<StockNode> getStockNodeByAShareShortName(@Param("aShareShortName") String aShareShortName);
 
+    @Query("match (n:股票) where n.{indexName}"+"={indexContent} return n")
+    List<StockNode> getStockNodeByQueryProperty(@Param("indexName")String indexName,String indexContent);
+
     //jpa命名规范查询股票名称
     List<StockNode> findAllByAShareShortName(String aShareShortName);
-
 
     List<StockNode> findAllByAShareName(String aShareName);
 
