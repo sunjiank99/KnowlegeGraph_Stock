@@ -21,6 +21,7 @@ public class QueryController {
 
     @GetMapping("/luis")
     public Object queryToLuis(String query){
+
         NLPSubject nlpSubject =(NLPSubject) NLPFactory.getNLPProxy(new LuisSubject());
         String result = "";
         try {

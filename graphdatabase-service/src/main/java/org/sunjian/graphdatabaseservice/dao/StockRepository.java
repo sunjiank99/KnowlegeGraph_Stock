@@ -7,13 +7,14 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+import org.sunjian.graphdatabaseservice.dao.extension.RepositoryExtension;
 import org.sunjian.graphdatabaseservice.dao.extension.StockRepositoryExtension;
 import org.sunjian.graphdatabaseservice.po.node.StockNode;
 
 import java.util.List;
 
 @Repository
-public interface StockRepository extends Neo4jRepository<StockNode, Long>, StockRepositoryExtension {
+public interface StockRepository extends Neo4jRepository<StockNode, Long>,StockRepositoryExtension{
 
     @Query("MATCH (n:`股票`) RETURN n ")
     List<StockNode> getStockNodeList();
@@ -22,11 +23,6 @@ public interface StockRepository extends Neo4jRepository<StockNode, Long>, Stock
     @Query("match (n:股票) where n.A股简称={aShareShortName} return n")
     List<StockNode> getStockNodeByAShareShortName(@Param("aShareShortName") String aShareShortName);
 
-//    @Query("match (n:股票) where n.{indexName}"+"={indexContent} return n")
-//    @Query("match (n:股票{{indexName}:{indexContent}}) return n")
-//    List<StockNode> getStockNodeByQueryProperty(@Param("indexName")String indexName,String indexContent);
-//    @Query("?1")
-//    List<StockNode> getStockNodeByCustomQuery(String query);
 
     //jpa命名规范查询股票名称
     List<StockNode> findAllByAShareShortName(String aShareShortName);

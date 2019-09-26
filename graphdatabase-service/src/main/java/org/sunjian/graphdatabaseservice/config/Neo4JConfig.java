@@ -18,10 +18,8 @@ public class Neo4JConfig {
                 .uri("bolt://localhost:7687")
                 .credentials("neo4j", "123456")
                 .build();
-
-
         // with domain entity base package(s)
-        return new SessionFactory(configuration,"org.sunjian.graphdatabaseservice.po");
+        return new SessionFactory(configuration,"org.sunjian.graphdatabaseservice.po","org.sunjian.graphdatabaseservice.po.node");
     }
 
     @Bean

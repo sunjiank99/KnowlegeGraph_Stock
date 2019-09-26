@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 
 @NodeEntity(label = "股票")
-public class StockNode extends BaseNode {
+public class StockNode extends BaseNode{
     @GeneratedValue
     @Id
     private Long nodeId;

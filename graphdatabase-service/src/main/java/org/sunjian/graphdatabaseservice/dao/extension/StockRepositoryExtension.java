@@ -7,7 +7,9 @@ import java.util.List;
 
 public interface StockRepositoryExtension {
     /**
-     * 自定义query语句查询
+     * 接口多重集成方式
+     * 实现自定义query语句查询
+     *
      * @param query 查询语句
      * @return List<StockNode>
      */
