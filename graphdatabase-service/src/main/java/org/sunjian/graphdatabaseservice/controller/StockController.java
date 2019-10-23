@@ -5,10 +5,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.sunjian.graphdatabaseservice.dao.BelongToRepository;
 import org.sunjian.graphdatabaseservice.dao.StockRepository;
 import org.sunjian.graphdatabaseservice.dto.CommonResult;
@@ -36,6 +33,18 @@ public class StockController {
     @GetMapping("/asn/{aStockName}")
     @ApiOperation(value = "根据A股名称（股票代码）查询股票节点")
     public Object getStockByAStockName(@PathVariable("aStockName") String aStockName){
+        List<StockNode> stockNodeList = stockRepository.findAllByAShareName(aStockName);
+        CommonResult commonResult =new CommonResult();
+        commonResult.success(stockNodeList);
+        return commonResult;
+    }
+
+    @GetMapping("/stock")
+    @ApiOperation(value = "根据A股名称（股票代码）查询股票节点")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="astockname",dataType = "String",paramType = "query")
+    })
+    public Object getStockByAStockNameTest(@RequestParam(value ="astockname") String aStockName){
         List<StockNode> stockNodeList = stockRepository.findAllByAShareName(aStockName);
         CommonResult commonResult =new CommonResult();
         commonResult.success(stockNodeList);

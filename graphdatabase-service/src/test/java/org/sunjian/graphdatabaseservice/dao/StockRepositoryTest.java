@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.sunjian.graphdatabaseservice.dao.extension.RepositoryExtension;
 import org.sunjian.graphdatabaseservice.po.node.StockNode;
+import org.sunjian.graphdatabaseservice.po.relation.BelongToRelation;
 import org.sunjian.graphdatabaseservice.util.SpringUtil;
 
 import java.util.*;
@@ -69,5 +70,11 @@ public class StockRepositoryTest {
 
     }
 
+    @Test
+    public void RelationShipTest(){
+//        List<Map<String, Object>> list =  belongToRepository.searchAllNode();
+        List<Map<String, Object>> list =  belongToRepository.searchRelationBetweenPersion();
+        System.out.println(list);
+    }
 
 }
