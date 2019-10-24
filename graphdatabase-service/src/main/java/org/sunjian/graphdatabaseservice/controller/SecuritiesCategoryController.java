@@ -9,27 +9,27 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.sunjian.graphdatabaseservice.dao.IndustryRepository;
+import org.sunjian.graphdatabaseservice.dao.SecuritiesCategoryRepository;
 import org.sunjian.graphdatabaseservice.dto.CommonResult;
-import org.sunjian.graphdatabaseservice.po.node.IndustryNode;
+import org.sunjian.graphdatabaseservice.po.node.SecuritiesCategoryNode;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/industry")
-public class IndustryController {
+@RequestMapping("/securitycategory")
+public class SecuritiesCategoryController {
+
     @Autowired
-    IndustryRepository industryRepository;
+    SecuritiesCategoryRepository securitiesCategoryRepository;
+
 
     @GetMapping("")
-    @ApiOperation(value = "根据A股简称查询行业实体")
+    @ApiOperation(value = "根据A股简称查询证券类别")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "stock_astockshortname", dataType = "String", paramType = "query", required = false),
     })
-    public Object getIndustryByStockAssn(@RequestParam(value = "stock_astockshortname") String stockAStockShortName) {
-        List<IndustryNode> industryNodeList=industryRepository.getBelongToStock(stockAStockShortName);
-        return new CommonResult().success(industryNodeList);
+    public Object getSecuritiyCategoryByStockAStockShortName(@RequestParam("stock_astockshortname") String stockAstockShortName) {
+        List<SecuritiesCategoryNode> securitiesCategoryNodeList = securitiesCategoryRepository.getSecuritiesCategoryNodeByStockName(stockAstockShortName);
+        return new CommonResult().success(securitiesCategoryNodeList);
     }
-
-
 }

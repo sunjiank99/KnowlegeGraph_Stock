@@ -20,4 +20,7 @@ public interface BelongToRepository extends Neo4jRepository<BelongToRelation, Lo
 
     @Query("match path=(n:关系人{关系人名称:'林纪良'})-[*..3]-(m:关系人{关系人名称:'孙清焕'}) return path")
     List<Map<String,Object>> searchRelationBetweenPersion();
+
+    @Query("match path=(n:关系人{关系人名称:{relationPersonName}})-[r]-(m:股票{A股名称:{aShareName}}) RETURN path")
+    List<Map<String,Object>> searchRelationBetweenRelationPersonAndStock(String relationPersonName,String aShareName);
 }

@@ -25,40 +25,33 @@ public class StockController {
     private StockRepository stockRepository;
 
     @GetMapping("/relation")
-    public String getRelation(){
-        List<Map<String,Object>> objectlist =  belongToRepository.searchAllNode();
-        return  objectlist.toString();
+    public String getRelation() {
+        List<Map<String, Object>> objectlist = belongToRepository.searchAllNode();
+        return objectlist.toString();
     }
 
-    @GetMapping("/asn/{aStockName}")
-    @ApiOperation(value = "根据A股名称（股票代码）查询股票节点")
-    public Object getStockByAStockName(@PathVariable("aStockName") String aStockName){
-        List<StockNode> stockNodeList = stockRepository.findAllByAShareName(aStockName);
-        CommonResult commonResult =new CommonResult();
-        commonResult.success(stockNodeList);
-        return commonResult;
-    }
 
-    @GetMapping("/stock")
-    @ApiOperation(value = "根据A股名称（股票代码）查询股票节点")
+    @GetMapping("")
+    @ApiOperation(value = "根据A股名称（股票代码）查询股票实体")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="astockname",dataType = "String",paramType = "query")
+            @ApiImplicitParam(name = "astockname", dataType = "String", paramType = "query",required = false),
+            @ApiImplicitParam(name = "astockshortname", dataType = "String", paramType = "query",required =false)
     })
-    public Object getStockByAStockNameTest(@RequestParam(value ="astockname") String aStockName){
-        List<StockNode> stockNodeList = stockRepository.findAllByAShareName(aStockName);
-        CommonResult commonResult =new CommonResult();
-        commonResult.success(stockNodeList);
-        return commonResult;
+    public Object getStockByAStockName(@RequestParam(value = "astockname",required = false) String aStockName,@RequestParam(value = "astockshortname",required = false)String aStockShortName) {
+
+        if (aStockName!=null && aStockShortName!=null) {
+            return new CommonResult().validateFailed("参数只允许一个");
+        } else if (aStockName!=null) {
+            List<StockNode> stockNodeList = stockRepository.findAllByAShareName(aStockName);
+            return new CommonResult().success(stockNodeList);
+        } else if (aStockShortName!=null) {
+            List<StockNode> stockNodeList = stockRepository.findAllByAShareShortName(aStockShortName);
+            return new CommonResult().success(stockNodeList);
+        }
+        return new CommonResult().validateFailed("参数不能都为空");
     }
 
-    @GetMapping("/assn/{aStockShortName}")
-    @ApiOperation(value = "根据A股简称查询股票节点")
-    public Object getStockByAStockShortName(@PathVariable String aStockShortName){
-        List<StockNode> stockNodeList=stockRepository.findAllByAShareShortName(aStockShortName);
-        CommonResult commonResult =new CommonResult();
-        commonResult.success(stockNodeList);
-        return commonResult;
-    }
+
 
 
 
