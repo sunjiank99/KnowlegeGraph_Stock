@@ -2,8 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24e28b06-5617-4eaa-8d21-373b9454dcb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/KnowledgeGraph-chatbot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/BelongToRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/BelongToRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/GraphdatabaseServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/GraphdatabaseServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/config/Neo4JConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/common/Neo4JConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/config/Swagger.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/common/Swagger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/controller/IndustryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-controller/src/main/java/org/sunjian/graphdatabaseservice/controller/restful/stock/IndustryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/controller/ListedExchangController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-controller/src/main/java/org/sunjian/graphdatabaseservice/controller/restful/stock/ListedExchangController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/controller/RelationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-controller/src/main/java/org/sunjian/graphdatabaseservice/controller/restful/stock/RelationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/controller/SecuritiesCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-controller/src/main/java/org/sunjian/graphdatabaseservice/controller/restful/stock/SecuritiesCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/controller/SrcIndustryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-controller/src/main/java/org/sunjian/graphdatabaseservice/controller/restful/stock/SrcIndustryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/controller/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-controller/src/main/java/org/sunjian/graphdatabaseservice/controller/restful/stock/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/controller/ZoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-controller/src/main/java/org/sunjian/graphdatabaseservice/controller/restful/stock/ZoneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/BelongToRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/dao/BelongToRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/IndustryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/dao/IndustryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/ListedExchangeNodeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/dao/ListedExchangeNodeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/RelationPersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/dao/RelationPersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/SecuritiesCategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/dao/SecuritiesCategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/SrcIndustryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/dao/SrcIndustryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/StockRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/dao/StockRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/ZoneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/dao/ZoneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/extension/RepositoryExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/dao/extension/RepositoryExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/extension/RespositoryExtensionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/dao/extension/RespositoryExtensionImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/extension/StockRepositoryExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/dao/extension/StockRepositoryExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dao/extension/StockRepositoryExtensionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/dao/extension/StockRepositoryExtensionImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dto/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-controller/src/main/java/org/sunjian/graphdatabaseservice/controller/restful/dto/CommonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/dto/RelationResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-controller/src/main/java/org/sunjian/graphdatabaseservice/controller/restful/dto/RelationResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/BaseNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/BaseNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/BaseRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/BaseRelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/common/CustomInternalPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/common/CustomInternalPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/common/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/common/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/common/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/common/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/common/Paths.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/common/Paths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/common/Relationship.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/common/Relationship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/common/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/common/Segment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/node/IndustryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/node/IndustryNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/node/ListedExchangeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/node/ListedExchangeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/node/RelationPersonNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/node/RelationPersonNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/node/SecuritiesCategoryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/node/SecuritiesCategoryNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/node/SrcIndustryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/node/SrcIndustryNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/node/StockNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/node/StockNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/node/ZoneNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/node/ZoneNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/po/relation/BelongToRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/java/org.sunjian.graphdatabaseservice.stock.infrastructure/po/relation/BelongToRelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/util/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-controller/src/main/java/org/sunjian/graphdatabaseservice/controller/restful/util/JsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/java/org/sunjian/graphdatabaseservice/util/SpringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-controller/src/main/java/org/sunjian/graphdatabaseservice/controller/restful/util/SpringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/graphdatabase-service/graphdatabase-infrastructure/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/test/java/org/sunjian/graphdatabaseservice/GraphdatabaseServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/test/java/org/sunjian/graphdatabaseservice/dao/BelongToRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/test/java/org/sunjian/graphdatabaseservice/dao/IndustryRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/test/java/org/sunjian/graphdatabaseservice/dao/ListedExchangeRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/test/java/org/sunjian/graphdatabaseservice/dao/RelationPersonRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/test/java/org/sunjian/graphdatabaseservice/dao/SecuritiesCategoryRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/test/java/org/sunjian/graphdatabaseservice/dao/SrcIndustryRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/test/java/org/sunjian/graphdatabaseservice/dao/StockRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphdatabase-service/src/test/java/org/sunjian/graphdatabaseservice/dao/ZoneRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knowledgegraph-eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/knowledgegraph-eurekaserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knowledgegraph-eurekaserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/knowledgegraph-eurekaserver/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +66,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/knowledgegraph-eurekaserver/src/main/java/org/sunjian/knowledgegrapheurekaserver/KnowledgegraphEurekaserverApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#385#386#0" expanded="true" />
@@ -27,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/knowledgegraph-eurekaserver/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="190">
+              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -40,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/knowledgegraph-eurekaserver/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -70,6 +123,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -78,78 +132,14 @@
               <item name="KnowledgeGraph-chatbot" type="b2602c69:ProjectViewProjectNode" />
               <item name="KnowledgeGraph-chatbot" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="KnowledgeGraph-chatbot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KnowledgeGraph-chatbot" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledgegraph-eurekaserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KnowledgeGraph-chatbot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KnowledgeGraph-chatbot" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledgegraph-eurekaserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KnowledgeGraph-chatbot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KnowledgeGraph-chatbot" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledgegraph-eurekaserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KnowledgeGraph-chatbot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KnowledgeGraph-chatbot" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledgegraph-eurekaserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KnowledgeGraph-chatbot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KnowledgeGraph-chatbot" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledgegraph-eurekaserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KnowledgeGraph-chatbot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KnowledgeGraph-chatbot" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledgegraph-eurekaserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="sunjian" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KnowledgeGraph-chatbot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KnowledgeGraph-chatbot" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledgegraph-eurekaserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="sunjian" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledgegrapheurekaserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KnowledgeGraph-chatbot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KnowledgeGraph-chatbot" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledgegraph-eurekaserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -179,17 +169,17 @@
       <updated>1568009862235</updated>
       <workItem from="1568009864119" duration="73000" />
       <workItem from="1568883240349" duration="90000" />
+      <workItem from="1573137213335" duration="27000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163000" />
+    <option name="totallyTimeSpent" value="190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -206,6 +196,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Word Book" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -219,29 +210,29 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/knowledgegraph-eurekaserver/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/knowledgegraph-eurekaserver/src/main/java/org/sunjian/knowledgegrapheurekaserver/KnowledgegraphEurekaserverApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="228">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/knowledgegraph-eurekaserver/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/knowledgegraph-eurekaserver/src/main/java/org/sunjian/knowledgegrapheurekaserver/KnowledgegraphEurekaserverApplication.java">
+    <entry file="file://$PROJECT_DIR$/knowledgegraph-eurekaserver/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
     </entry>
